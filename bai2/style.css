@@ -1,0 +1,27 @@
+    body{
+        font-family:'Times New Roman', serif;
+        background-color: #FFFFFF;
+    }
+    .khung{
+        width: 800px;
+        margin: 20px auto;
+        background-color:  #A8861B;
+        color: #FFFFFF;
+        padding: 20px;
+        overflow: auto;
+    }
+    h1{
+        text-align: center;
+        margin-top: 0;
+        font-size: 36px;
+    }
+    img{
+        float: right;
+        width: 220px;
+        margin-left: 20px;
+    }
+    p{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 20px;
+    }
