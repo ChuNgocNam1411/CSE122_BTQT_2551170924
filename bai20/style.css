@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 7px;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+.container {
+    width: 100%;
+    max-width: 567px;
+    min-height: 169px;
+    margin: 0 auto;
+    padding: 15px 12px;
+    background: #101416;
+    text-align: center;
+}
+.flower-card {
+    width: 292px;
+    max-width: 100%;
+    min-height: 70px;
+    margin: 0 auto 15px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #1c2226;
+}
+#flower {
+    display: block;
+    width: 100%;
+    height: 24px;
+    object-fit: contain;
+    object-position: left center;
+    filter: grayscale(1);
+    transition: filter 0.3s, transform 0.3s;
+}
+.caption {
+    margin-top: 2px;
+    font-size: 18px;
+    font-style: italic;
+    background: linear-gradient(
+        90deg,
+        #e7bb43,
+        #fff0a0,
+        #d69a13
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+button {
+    padding: 5px 11px;
+    border: 1px solid #343b40;
+    border-radius: 5px;
+    background: #232b30;
+    color: #eeeeee;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+button:hover {
+    background: #39454c;
+    transform: translateY(-1px);
+}
+button.active {
+    background: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+#flower.gray {
+    filter: grayscale(1);
+}
+#flower.xray {
+    filter: grayscale(1) invert(1);
+}
+#flower.invert {
+    filter: invert(1);
+}
+#flower.fliph {
+    transform: scaleX(-1);
+}
+#flower.flipv {
+    transform: scaleY(-1);
+}
+#flower.glow {
+    filter: drop-shadow(0 0 5px #ffdf70)
+            brightness(1.2);
+}
+#flower.shadow {
+    filter: drop-shadow(3px 3px 3px #888888);
+}
+#flower.bold-shadow {
+    filter: drop-shadow(4px 4px 5px #000000)
+            contrast(1.5);
+}
+#flower.dropshadow {
+    filter: drop-shadow(5px 5px 3px #777777);
+}
+#flower.blur {
+    filter: blur(3px);
+}
+#flower.wave {
+    filter: url(#waveFilter);
+}
+#flower.mask {
+    opacity: 0.4;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        black,
+        transparent
+    );
+    mask-image: linear-gradient(
+        to right,
+        black,
+        transparent
+    );
+}
+#flower.alpha {
+    opacity: 0.4;
+    filter: grayscale(1);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách việc cần làm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bai16.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Danh sách việc cần làm</h2>
+            <p>Thêm việc mới, đánh dấu hoàn thành hoặc xóa — tất cả bằng JavaScript.</p>
+        </div>
+        <div class="input-area">
+            <input type="text" id="taskInput"
+                   placeholder="Nhập công việc cần làm...">
+            <button id="addBtn">Thêm</button>
+        </div>
+        <ul id="taskList">
+            <li class="completed">
+                <input type="checkbox" checked>
+                <span>Đọc chương HTML5 cơ bản</span>
+                <button class="delete-btn">Xóa</button>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>Làm bài tập CSS Grid</span>
+                <button class="delete-btn">Xóa</button>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>Quay video OBS nộp bài</span>
+                <button class="delete-btn">Xóa</button>
+            </li>
+        </ul>
+        <div class="footer">
+            Còn <span id="remaining">2</span> việc chưa hoàn thành
+        </div>
+    </div>
+</body>
+</html>

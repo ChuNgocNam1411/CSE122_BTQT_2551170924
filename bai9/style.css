@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+    background-color: #FFFFFF;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.cv-background{
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 25px 16px;
+    background-color: #edf1f5;
+}
+.cv-card{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.left-column{
+    padding: 28px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #1565C0, #0d3f7a);
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #1565C0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.left-column h2{
+    margin: 0;
+    font-size: 12px;
+}
+.student{
+    margin:0;
+    font-size: 12px;
+}
+.contact{
+    margin-top: 25px;
+    text-align: left;
+    font-size: 12px;
+}
+.contact p{
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+.right-column{
+    padding: 22px;
+}
+.cv-section{
+    margin-bottom: 15px;
+}
+.cv-section h3{
+    margin: 0 0 10px;
+    padding-bottom: 7px;
+    color: #1565C0;
+    font-size: 15px;
+    border-bottom: 1px solid #DCE5EF;
+}
+.cv-section p{
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.7;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+.skills span{
+    padding: 5px 10px;
+    color: #1565C0;
+    background: #edf1f5;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.links a{
+    color: #1565C0;
+    text-decoration: underline;
+}
+.links a:hover{
+    color: #0d3f7a;
+}
+@media (max-width: 600px){
+    body{
+        padding: 10px;
+    }
+    .cv-background{
+        padding:12px;
+    }
+    .cv-card{
+        grid-template-columns: 1fr;
+    }
+    .left-column{
+        padding: 25px 20px;
+    }
+    .contact{
+        text-align: center;
+    }
+    .right-column{
+        padding:20px
+    }
+}

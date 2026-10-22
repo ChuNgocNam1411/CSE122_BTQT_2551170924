@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    background-color: #ffffff;
+}
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 2px auto;
+
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr) 110px;
+    grid-template-rows: 56px minmax(388px, auto);
+    grid-template-areas:
+        "banner banner banner"
+        "menu content quangcao";
+}
+.banner {
+    grid-area: banner;
+    background-color: #C62828;
+    background-image: url("Anh/Bai21/Nen_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px;
+    color: white;
+}
+.banner img {
+    width: 38px;
+    height: auto;
+}
+.banner h2 {
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #555555;
+}
+.menu {
+    grid-area: menu;
+    background: linear-gradient(to bottom, #C62828, #8E0000);
+    display: flex;
+    flex-direction: column;
+}
+.menu a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 15px;
+}
+.menu a:hover {
+    background-color: #8E0000;
+}
+.content {
+    grid-area: content;
+    background-color: #FFFFFF;
+    padding: 16px;
+    min-width: 0;
+}
+.content h3 {
+    color: #C62828;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.menu-con {
+    background-color: #FFE082;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 13px;
+}
+.menu-con ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    padding-left: 14px;
+}
+.menu-con li {
+    white-space: nowrap;
+}
+.noidung {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 22px 12px;
+    min-height: 101px;
+}
+.noidung p {
+    margin-bottom: 10px;
+}
+.loichao {
+    text-align: center;
+    line-height: 15px;
+}
+.quangcao {
+    grid-area: quangcao;
+    padding: 12px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.quangcao img {
+    display: block;
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+}
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "banner"
+            "menu"
+            "content"
+            "quangcao";
+    }
+    .banner {
+        min-height: 65px;
+        padding: 10px;
+    }
+    .banner h2 {
+        font-size: 16px;
+    }
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menu a {
+        flex: 1 1 140px;
+    }
+    .content {
+        padding: 15px 10px;
+    }
+    .menu-con ul {
+        gap: 8px 16px;
+    }
+    .quangcao {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .quangcao img {
+        width: 110px;
+    }
+}

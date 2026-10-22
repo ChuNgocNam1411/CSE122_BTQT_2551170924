@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 5px;
+    font-family: "Times New Roman", serif;
+    font-size: 13px;
+    color: #222;
+}
+.container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.anh {
+    width: 38%;
+    flex-shrink: 0;
+}
+.anh img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+.noidung {
+    flex: 1;
+}
+h1 {
+    margin: 0 0 8px;
+    color: #C9A227;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px #bbb;
+}
+.khung {
+    border: 2px dashed #F07B00;
+    padding: 10px 11px;
+    border-radius: 6px;
+    line-height: 1.5;
+}
+.khung p {
+    margin: 0 0 8px;
+    text-align: justify;
+}
+.khung p:last-child {
+    margin-bottom: 0;
+}
+.khung span {
+    color: #C62828;
+    font-weight: bold;
+}

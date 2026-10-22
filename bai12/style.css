@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("Anh/Nen.gif");
+    background-repeat: repeat;
+    background-position: center top;
+}
+.container {
+    width: 690px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
+.calendar {
+    height: 218px;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.year {
+    color: #c62828;
+    font-size: 20px;
+    font-weight: bold;
+}
+.month {
+    color: #1565c0;
+    font-size: 26px;
+    font-weight: bold;
+}
+.day {
+    color: #c62828;
+    font-size: 76px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+.weekday {
+    color: #1565c0;
+    font-size: 26px;
+    font-weight: bold;
+}
+.greeting {
+    margin: 22px 0;
+    text-align: center;
+    color: #c62828;
+    font-size: 27px;
+    font-style: italic;
+}
+#dateForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 24px 20px;
+    border: 2px solid #1565c0;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+.input-group {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.input-group label {
+    color: #111111;
+    font-size: 20px;
+}
+.input-group input {
+    width: 100%;
+    min-width: 0;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+#dateForm button {
+    flex: 0 0 88px;
+    height: 66px;
+    border: none;
+    border-radius: 6px;
+    background-color: #546e7a;
+    color: #ffffff;
+    font-size: 19px;
+    cursor: pointer;
+}
+#dateForm button:hover {
+    background-color: #374f5b;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 18px;
+    }
+    .calendar {
+        height: 190px;
+    }
+    #dateForm {
+        gap: 8px;
+        padding: 15px 10px;
+    }
+    .input-group label {
+        font-size: 16px;
+    }
+    .input-group input {
+        font-size: 16px;
+    }
+    #dateForm button {
+        flex-basis: 55px;
+        font-size: 15px;
+    }
+    .greeting {
+        font-size: 22px;
+    }
+}

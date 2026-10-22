@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 9px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+header {
+    background-color: #2E7D32;
+    text-align: center;
+    padding: 12px 10px;
+}
+
+header h1 {
+    margin: 0;
+    color: #FFEB3B;
+    font-size: 18px;
+}
+
+.gioi-thieu {
+    color: #1b5e20;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 0 0 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.danh-sach {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0 18px 10px;
+}
+
+.ky-quan {
+    border: 1px solid #dce5dc;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.ky-quan img {
+    display: block;
+    width: 100%;
+    height: 108px;
+    object-fit: cover;
+    border-bottom: 2px solid #2E7D32;
+}
+
+.noi-dung {
+    padding: 10px;
+}
+
+.noi-dung h3 {
+    color: #1b5e20;
+    font-size: 12px;
+    margin: 0 0 5px;
+}
+
+.noi-dung p {
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .danh-sach {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .danh-sach {
+        grid-template-columns: 1fr;
+    }
+}

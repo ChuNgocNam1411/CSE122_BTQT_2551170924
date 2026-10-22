@@ -1,0 +1,118 @@
+:root {
+    --nen: #ffffff;
+    --chu: #111111;
+    --nen-the: #f3f4f6;
+    --vien: #dddddd;
+    --nhan: #2563eb;
+    --nut: #60a5fa;
+}
+.toi {
+    --nen: #0f172a;
+    --chu: #e2e8f0;
+    --nen-the: #1e293b;
+    --vien: #334155;
+    --nhan: #60a5fa;
+    --nut: #60a5fa;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 4px;
+    background-color: var(--nen);
+    color: var(--chu);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s ease,
+                color 0.4s ease;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 14px;
+    background-color: var(--nen);
+    color: var(--chu);
+    transition: background-color 0.4s ease,
+                color 0.4s ease;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.header h2 {
+    margin: 8px 0;
+    font-size: 22px;
+}
+.the-thong-tin {
+    padding: 14px 17px;
+    margin-bottom: 12px;
+    background-color: var(--nen-the);
+    border: 1px solid var(--vien);
+    border-radius: 10px;
+    transition: background-color 0.4s ease,
+                border-color 0.4s ease,
+                color 0.4s ease;
+}
+.the-thong-tin h3 {
+    margin: 0 0 8px;
+    color: var(--nhan);
+    font-size: 15px;
+}
+.the-thong-tin p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+code {
+    font-family: monospace;
+}
+.trang-thai {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+    transition: color 0.4s ease;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 28px;
+    flex-shrink: 0;
+}
+.switch input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #cbd5e1;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.switch input:checked + .slider {
+    background-color: #60a5fa;
+}
+.switch input:checked + .slider::before {
+    transform: translateX(27px);
+}
+.switch input:focus-visible + .slider {
+    outline: 2px solid var(--nhan);
+    outline-offset: 3px;
+}
